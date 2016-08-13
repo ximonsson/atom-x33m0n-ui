@@ -7,18 +7,26 @@
 
 
 .tree-view-resizer {
-  border-right: 1px solid @base-border-color;
+	border-right: 1px solid @base-border-color;
 }
 
 .tree-view {
-  color: @text-color;
-  background-color: @tree-view-background-color;
-
-  .list-item.selected {
-    color: @text-color-selected;
-  }
-
-  .directory.status-modified {
-	  color: @text-color;
-  }
+	color: @text-color;
+	background-color: @tree-view-background-color;
+	.directory {
+		.header {
+			color: lighten(@text-color, 20%);
+		}
+		&.status-modified {
+			color: @text-color;
+		}
+		&.selected {
+			.header {
+				color: @text-color-selected;
+			}
+		}
+	}
+	.list-item.status-modified.selected {
+		color: @text-color-warning;
+	}
 }
