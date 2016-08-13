@@ -10,46 +10,52 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
-
 // Text Colors
-@text-color:           hsl(0,0%,66%);
+// @text-color:           hsl(0,0%,66%);
+@text-color: #b0b0b0;
 @text-color-subtle:    hsl(0,0%,50%);
 @text-color-highlight: hsl(0,0%,94%);
 @text-color-selected:  hsl(0,0%,100%);
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
+// @text-color-warning: hsl( 25,  55%, 60%);
+@text-color-warning: #FFB882;
 @text-color-error:   hsl(  9, 100%, 64%);
 
 // Background colors
 @background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
+// @background-color-success: hsl(160,  70%, 36%);
+@background-color-success: #1c9c71;
 @background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+// @background-color-error:   hsl(5,    70%, 62%);
+@background-color-error: #E93D51;
 
 @background-color-highlight: lighten(@base-background-color, 5%);
 @background-color-selected:  lighten(@base-background-color, 10%);
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+// @base-background-color: hsl(222,6%,22%);
+@base-background-color: #2f343f;
+@base-border-color:     darken(@base-background-color, 5%);
 
 // Component colors
-@pane-item-background-color: @base-background-color;
+@pane-item-background-color: lighten(@base-background-color, 3%);
+// @pane-item-background-color: darken(@tab-bar-background-color, 7%);
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
+@input-background-color: lighten(@base-background-color, 5%);
 @input-border-color:     @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
 @tool-panel-border-color:     @base-border-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);;
+// @inset-panel-background-color: lighten(@base-background-color, 3%);
+@inset-panel-background-color: darken(@tab-bar-background-color, 7%);
 @inset-panel-border-color:     @base-border-color;
 
-@panel-heading-background-color: lighten(@base-background-color, 4%);
+@panel-heading-background-color: lighten(@base-background-color, 3%);
 @panel-heading-border-color:     @base-border-color;
 
 @overlay-background-color: lighten(@base-background-color, 5%);
@@ -63,7 +69,7 @@
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: lighten(@tab-bar-background-color, 3%);
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
@@ -77,8 +83,8 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 12px;
-@input-font-size: 14px;
+@font-size: 11px;
+@input-font-size: 13px;
 
 @disclosure-arrow-size: 12px;
 
@@ -87,8 +93,8 @@
 @component-icon-size: 16px;
 @component-line-height: 25px;
 
-@tab-height: 30px;
+@tab-height: 36px;
 
 // Misc
 @component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: 'Open Sans', '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
